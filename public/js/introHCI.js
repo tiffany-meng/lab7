@@ -12,7 +12,7 @@ function initializePage() {
 	$("button.likeBtn").click(clickLikeBtn);
 }
 
-function clickLikeBtn() {
+function clickLikeBtn(e) {
 	e.preventDefault();
 	ga("send", "event", 'like', 'click');
 }
